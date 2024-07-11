@@ -1,0 +1,10 @@
+@import "../../../styles/variables.scss";
+
+.back {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: $fontweight-medium;
+    position: relative;
+    color: $color-medgrey;
+    padding: 20px 50px 0;
+}

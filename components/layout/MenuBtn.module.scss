@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.menuBtn {
+    display: none;
+
+    @include at-media("mobile") {
+        display: block;
+        background: url(../../public/images/menu.svg) no-repeat;
+        width: 30px;
+        height: 30px;
+        border: none;
+        appearance: none;
+        position: relative;
+        z-index: 999;
+    }
+}

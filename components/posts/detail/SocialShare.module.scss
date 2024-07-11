@@ -1,0 +1,43 @@
+@import "../../../styles/variables.scss";
+
+.social {
+    text-align: left;
+    margin: 25px auto 25px;
+    position: relative;
+    padding: 0 5vw;
+    max-width: 960px;
+
+    &_icons {
+        position: relative;
+        padding: 16px 0 10px;
+        text-align: center;
+        
+        &:before,
+        &:after {
+            content: '';
+            width: 100%;
+            height: $border-thickness;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $color-lightgrey;
+            opacity: .2;
+        }
+    
+        &:after {
+            top: auto;
+            bottom: 0;
+        }
+
+        .icon {
+            background: $color-darkgrey;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 0 3px;
+
+            svg {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.footer {
+    padding: 50px 0 100px;
+    background: $color-darkgrey;
+
+    p {
+        font-size: .875em;
+        color: $color-lightgrey;
+        text-align: center;
+    }
+}

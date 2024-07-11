@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.post {
+    &_header {
+        background: $color-white;
+    
+        &_content {
+            padding: 5vw 5vw 0;
+            background: $color-white;
+            position: relative;
+            border-radius: 3px;
+            max-width: 960px;
+            margin: 0 auto;
+            margin-top: -86px;
+        }
+    }
+
+    &_title {
+        margin: 0;
+    }
+    &_subtitle {
+        margin: 15px 0;
+        color: var(--lightgrey);
+        font-weight: $fontweight-normal;
+        font-style: italic;
+        line-height: 1.4;
+        font-size: 1.5em;
+    }
+    &_author {
+        display: flex;
+        align-items: center;
+
+        p {
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: $fontweight-medium;
+            font-size: $fontsize-xs;
+            padding-left: 15px;
+            color: $color-darkgrey;
+        }
+    }
+}

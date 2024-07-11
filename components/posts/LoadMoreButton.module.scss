@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.loadMore {
+    text-align: center;
+
+    button {
+        display: block;
+        padding: 15px 40px;
+        margin: 0 auto;
+        border: none;
+        color: #fff;
+        background: $color-medgrey;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 1em;
+        letter-spacing: .03em;
+        cursor: pointer;
+        transition: background 300ms linear 0s;
+        margin-top: $grid-gap;
+
+        &:hover {
+            background: $color-darkgrey;
+        }
+
+        &:disabled {
+            background: $color-lightgrey;
+            cursor: default;
+        }
+    }
+}

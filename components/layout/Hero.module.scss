@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.hero {
+    height: 30rem;
+    background-color: $color-lightgrey;
+    background-size: cover;
+    background-position: center center;
+
+
+    @include at-media("tablet") {
+        height: 100vw;
+    }
+}

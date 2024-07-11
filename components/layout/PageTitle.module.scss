@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+.pageTitle {
+    height: 30rem;
+    background-color: $color-lightgrey;
+    margin-bottom: $section-padding;
+    color: $color-white;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: $section-padding;
+
+    h1 {
+        color: $color-white;
+    }
+}

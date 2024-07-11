@@ -1,0 +1,60 @@
+@import "../../styles/variables.scss";
+
+.form {
+    margin: 0 auto;
+    text-align: left;
+
+    label,
+    input,
+    textarea {
+        display: block;
+        margin: 0 auto;
+    }
+
+    label {
+        font-weight: $fontweight-bold;
+        font-size: 1em;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid $color-lightgrey;
+        border-radius: $border-radius-sm;
+        margin: 8px 0 25px;
+        font-family: inherit;
+        font-weight: $fontweight-light;
+        font-size: $fontsize-sm;
+    }
+
+    .validation_message {
+        display: block;
+        font-weight: $fontweight-medium;
+        color: $color-red;
+        font-size: $fontsize-xs;
+    }
+
+    .submit {
+        display: inline-block;
+        border-radius: $border-radius-md;
+        background: $color-darkgrey;
+        padding: 15px 25px;
+        font-weight: $fontweight-bold;
+        letter-spacing: $letter-spacing;
+        font-size: $fontsize-xs;
+        text-transform: uppercase;
+        border: none;
+        color: #fff;
+
+        :hover {
+            background: var(--darkgrey);
+        }
+
+        :disabled {
+            background: #B6B7BA;
+            border-bottom: 4px solid var(--lightgrey);
+            cursor: default;
+        }
+    }
+}
