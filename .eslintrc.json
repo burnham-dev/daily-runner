@@ -1,5 +1,7 @@
 {
   "extends": [
-    "next"
+    "next",
+    "next/babel",
+    "next/core-web-vitals"
   ]
 }

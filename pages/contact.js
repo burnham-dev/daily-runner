@@ -13,11 +13,11 @@ const ContactPage = ({ page }) => {
             <section className="section">
                 <div className="container">
                     <div className="columns">
-                        <div class="column_1_2">
+                        <div className="column_1_2">
                             <h1>{page.headline}</h1>
                             <BlockContent blocks={page.content} />
                         </div>
-                        <div class="column_1_2">
+                        <div className="column_1_2">
                             <ContactForm />
                         </div>
                     </div>

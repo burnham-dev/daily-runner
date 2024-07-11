@@ -66,7 +66,7 @@ const ContactForm = () => {
       // Returns the data that the user submitted for them to preview after submission
       return (
         <>
-          <h3>We've received your message!</h3>
+          <h3>We&lsquo;ve received your message!</h3>
           <p>We will be in touch with you shortly.</p>
           <div className={classes.success_message}>
               First Name: {formData.firstName} <br />
