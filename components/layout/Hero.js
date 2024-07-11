@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import { urlFor } from '../../lib/util/posts';
 
 import classes from './Hero.module.scss';

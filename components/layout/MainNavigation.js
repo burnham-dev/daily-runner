@@ -12,14 +12,14 @@ const MainNavigation = ({ logo, isMenuOpen, toggleMenu }) => {
                 <div className="container">
                     <div className={classes.header_cols}>
                         <Link href="/">
-                            <a className={classes.header_logo}>
+                            <span className={classes.header_logo}>
                                 <Image
                                     src="/images/tdr-logo-r.png"
                                     alt={'The Daily Runner logo'}
                                     width={159}
                                     height={47}
                                 />
-                            </a>
+                            </span>
                         </Link>
                         <nav>
                             <MenuBtn toggleMenu={toggleMenu} />

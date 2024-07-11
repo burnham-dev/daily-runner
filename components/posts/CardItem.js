@@ -12,8 +12,8 @@ const CardItem = ({ fixedWidth = false, title, featuredImage, author, excerpt, d
     });
 
     return (
-        <Link href={`/posts/${slug}`}>
             <div className={fixedWidth ?   `${classes.fixedWidth} ${classes.card}` : classes.card}>
+        <Link href={`/posts/${slug}`}>
                 <div className={classes.card_top}>
                     {featuredImage && <div className="image-container">
                         <Image
@@ -32,8 +32,8 @@ const CardItem = ({ fixedWidth = false, title, featuredImage, author, excerpt, d
                     {author && <p className={classes.author_name}>By {author.name}</p>}
                     <p className={classes.date}>{formattedDate}</p>
                 </div>
+                </Link>
             </div>
-        </Link>
     );
 }
 

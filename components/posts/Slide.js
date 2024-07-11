@@ -21,8 +21,6 @@ const Slide = ({ featuredImage, title, date, excerpt, slug }) => {
                 <Image
                 src={urlFor(featuredImage).url()}
                 alt={title}
-                width={2400}
-                height={1300}
                 layout="fill"
                 />
             </div>}
@@ -32,7 +30,7 @@ const Slide = ({ featuredImage, title, date, excerpt, slug }) => {
                     <h2>{title}</h2>
                     <p>{excerpt}</p>
                     <Link href={`/posts/${slug}`}>
-                        <a className="underline-link">Read More</a>
+                        <span className="underline-link">Read More</span>
                     </Link>
                 </div>  
             </div>  
